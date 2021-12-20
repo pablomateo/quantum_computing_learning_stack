@@ -44,7 +44,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Export drawio files to asciidoctor and png files
-        uses: docker://rlespinasse/drawio-export:v3.x
+        uses: docker://ghcr.io/rlespinasse/drawio-export:v3.x
         with:
           args: --fileext adoc --folder images --transparent --on-changes
 
