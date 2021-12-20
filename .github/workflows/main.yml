@@ -8,7 +8,7 @@ on:
       - github_actions_test
     paths:
       - "**.drawio"
-      - .github/workflows/drawio-export.yml
+      - .github/workflows/main.yml
 concurrency:
   group: drawio-export-${{ github.ref }}
   cancel-in-progress: true
