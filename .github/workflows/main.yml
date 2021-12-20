@@ -35,10 +35,11 @@ jobs:
         if: github.ref == 'refs/heads/main'
 
       - name: Commit changed files
-        uses: stefanzweifel/git-auto-commit-action@v4
+        uses: EndBug/add-and-commit@v7
         with:
-          commit_message: "docs: sync draw.io exported files"
-          commit_user_name: "${{ env.GIT_COMMIT_COMMITTER_NAME }}"
-          commit_user_email: "${{ env.GIT_COMMIT_COMMITTER_EMAIL }}"
-          commit_author: "${{ env.GIT_COMMIT_AUTHOR }}"
-        if: github.ref == 'refs/heads/main'
+          # This "special" author name and email will show up as the GH Actions user/bot in the UI
+          author_name: pmf-github-action
+          author_email: 41898282+github-actions[bot]@users.noreply.github.com
+          message: 'Automatically rendered .drawio files for quantum learning stack'
+          add: "${{ steps.render.outputs.rendered-files }}"
+        if: "${{ steps.render.outputs.rendered-files != ''}}"
