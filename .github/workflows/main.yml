@@ -5,7 +5,7 @@ name: Render Test
 on:
   push:
     branches:
-      - main
+      - github_actions_test
     paths:
       - "**.drawio"
       - .github/workflows/drawio-export.yml
