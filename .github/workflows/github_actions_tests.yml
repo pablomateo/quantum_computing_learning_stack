@@ -34,7 +34,7 @@ jobs:
 
       - name: Get author and committer info from HEAD commit
         uses: rlespinasse/git-commit-data-action@v1.x
-        if: github.ref == 'refs/heads/main'
+        if: github.ref == 'refs/heads/github_actions_test'
 
       - name: Commit changed files
           uses: stefanzweifel/git-auto-commit-action@v4
