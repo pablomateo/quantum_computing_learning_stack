@@ -43,3 +43,4 @@ jobs:
             commit_user_name: "pmf-github-action"
             commit_user_email: 41898282+github-actions[bot]@users.noreply.github.com
             commit_author: "${{ env.GIT_COMMIT_AUTHOR }}"
+          if: github.ref == 'refs/heads/github_actions_test'
