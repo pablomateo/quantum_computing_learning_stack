@@ -23,7 +23,8 @@ jobs:
     - name: Render draw.io files
       uses: docker://ghcr.io/racklet/render-drawio-action:v1.0.3
       id: render
-      with: # Showcasing the default values here
+      with: 
+        # Showcasing the default values here
         formats: 'svg','pdf','png'
         sub-dirs: '.'
         skip-dirs: '.git'
