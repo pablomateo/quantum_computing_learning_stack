@@ -1,2 +1,2 @@
-# Quantum Computing_learning_stack
+# Quantum Computing Learning_stack
 Resources &amp; References to learn Quantum Computing
