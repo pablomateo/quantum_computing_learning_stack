@@ -17,6 +17,7 @@ jobs:
       uses: actions/checkout@v2
     - name: Run script
       run: echo Building Quantum Stack!
+      
     - name: Render files
       uses: docker://ghcr.io/racklet/render-drawio-action:v1
       id: render
