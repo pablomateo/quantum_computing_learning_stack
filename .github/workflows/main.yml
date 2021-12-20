@@ -27,7 +27,6 @@ jobs:
         uses: rlespinasse/drawio-export-action@v2.x
         with:
           format: png
-          path: /images
           transparent: true
           output: drawio-assets
 
