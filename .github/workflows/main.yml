@@ -1,5 +1,5 @@
 # This is a basic workflow to help you get started with Actions
-# Based on: https://github.com/racklet/render-drawio-action
+# Based on: https://github.com/racklet/render-drawio-action
 
 name: Render Quantum Learning Stack
 
@@ -15,21 +15,17 @@ jobs:
     steps:      
     - name: Checkout
       uses: actions/checkout@v2
-    
-    # Runs a single command using the runners shell
-    - name: Run a one-line script
+    - name: Run script
       run: echo Building Quantum Stack!
-      
-    - name: Render draw.io files
-      uses: docker://ghcr.io/racklet/render-drawio-action:v1.0.3
+    - name: Render files
+      uses: docker://ghcr.io/racklet/render-drawio-action:v1
       id: render
       with: 
-        # Showcasing the default values here
-        formats: 'svg','pdf','png'
+        format: png,pdf,svg
         sub-dirs: '.'
         skip-dirs: '.git'
-        # files: '' # unset, specify "dest-file:src-file" mappings here
-        log-level: 'info'
+        # files:  "/images/quantum_learning_stack.png:quantum_roadmap.drawio,images/quantum_learning_stack.svg:quantum_roadmap.drawio"
+        log-level: 'debug'
     - name: List the rendered files
       run: 'ls -l ${{ steps.render.outputs.rendered-files }}'
     - uses: EndBug/add-and-commit@v7
