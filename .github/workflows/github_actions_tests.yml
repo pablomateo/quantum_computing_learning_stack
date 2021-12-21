@@ -28,7 +28,7 @@ jobs:
       - name: Export drawio files to asciidoctor and png files
         uses: rlespinasse/drawio-export-action@v2.x
         with:
-          format: [pdf, png, svg, vsdx, xml]
+          format: "pdf"
           transparent: true
           output: images
 
