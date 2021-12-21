@@ -7,33 +7,65 @@ on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
     branches: [ main ]
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+concurrency:
+  group: drawio-export-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
-  render_drawio:
+  render_tests:
     runs-on: ubuntu-latest
-    name: Render draw.io files
-    steps:      
-    - name: Checkout
-      uses: actions/checkout@v2
-    - name: Run script
-      run: echo Building Quantum Stack!
-      
-    - name: Render files
-      uses: docker://ghcr.io/racklet/render-drawio-action:v1
-      id: render
-      with: 
-        format: png,pdf,svg
-        sub-dirs: '.'
-        skip-dirs: '.git'
-        # files:  "/images/quantum_learning_stack.png:quantum_roadmap.drawio,images/quantum_learning_stack.svg:quantum_roadmap.drawio"
-        log-level: 'debug'
-    - name: List the rendered files
-      run: 'ls -l ${{ steps.render.outputs.rendered-files }}'
-    - uses: EndBug/add-and-commit@v7
-      with:
-        # This "special" author name and email will show up as the GH Actions user/bot in the UI
-        author_name: pmf-github-action
-        author_email: 41898282+github-actions[bot]@users.noreply.github.com
-        message: 'Automatically rendered .drawio files for quantum learning stack'
-        add: "${{ steps.render.outputs.rendered-files }}"
-      if: "${{ steps.render.outputs.rendered-files != ''}}"
+    name: Building Quantum Stack!
+    steps:
+      - uses: actions/checkout@v2
+      - name: Initiating entanglement
+        run: echo Building Quantum Stack!
+
+      # png
+      - name: Building png
+        uses: Burnett01/actions-drawio@1.1
+        with:
+          src: quantum_roadmap.drawio
+          dest: images/quantum_roadmap.png
+      #svg
+      - name: Building svg
+        uses: Burnett01/actions-drawio@1.1
+        with:
+          src: quantum_roadmap.drawio
+          dest: images/quantum_roadmap.svg
+
+      - name: Get current date
+        id: date
+        run: echo "::set-output name=date::$(date +'%d-%m-%Y T%H:%M:%S')"
+
+      - name: Changelog
+        run: |
+          echo 'Generating new images at ${{ steps.date.outputs.date }}' >> changelog.txt
+
+    # Upload files to repo
+      - name: List & upload rendered files
+        run: 'ls -l ${{ steps.render.outputs.rendered-files }}'
+      - uses: EndBug/add-and-commit@v7
+        with:
+          message: "[PMF Bot] Updated png!"
+          author_name: PMF Github Bot
+          author_email: 41898282+github-actions[bot]@users.noreply.github.com
+          add: "*.*"
+
+      # Upload Artifacts
+      - name: Upload png as artifact
+        uses: actions/upload-artifact@v1
+        with:
+          name: png
+          path: images/quantum_roadmap.png
+
+      - name: Upload svg as artifact
+        uses: actions/upload-artifact@v1
+        with:
+          name: svg
+          path: images/quantum_roadmap.svg
+
+      - name: Collapsing Quantum states
+        run: echo Finished workflow!
