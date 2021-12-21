@@ -34,7 +34,7 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: png
-          path: quantum_roadmap.png
+          path: images/quantum_roadmap.png
 
       #svg
       - name: Building svg
@@ -46,7 +46,7 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: svg
-          path: quantum_roadmap.svg
+          path: images/quantum_roadmap.svg
 
       # pdf
       - name: Building pdf
@@ -58,7 +58,7 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: pdf
-          path: quantum_roadmap.pdf
+          path: images/quantum_roadmap.pdf
 
       - name: List & upload rendered files
         run: 'ls -l ${{ steps.render.outputs.rendered-files }}'
