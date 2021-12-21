@@ -20,43 +20,14 @@ jobs:
     runs-on: ubuntu-latest
     name: Render draw.io files
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-
-    - name: Run script
-      run: echo Building Quantum Stack!
-
-    - name: Render scg files
-      uses: docker://ghcr.io/racklet/render-drawio-action:v1
-      id: render
-      with:
-        format: svg
-        sub-dirs: '.'
-        skip-dirs: '.git'
-        # files:  "/images/quantum_learning_stack.png:quantum_roadmap.drawio,images/quantum_learning_stack.svg:quantum_roadmap.drawio"
-        log-level: 'debug'
-
-    - name: Render pdf files
-      uses: docker://ghcr.io/racklet/render-drawio-action:v1
-      id: render_pdf
-      with:
-        files: images/quantum_learning_stack.pdf:quantum_roadmap.drawio
-        log-level: 'debug'
-
-    - name: Render png files
-      uses: docker://ghcr.io/racklet/render-drawio-action:v1
-      id: render_png
-      with:
-        files: images/quantum_learning_stack.png:quantum_roadmap.drawio
-
-    - name: List the rendered files
-      run: 'ls -l ${{ steps.render.outputs.rendered-files }}'
-
-    - uses: EndBug/add-and-commit@v7
-      with:
-        # This "special" author name and email will show up as the GH Actions user/bot in the UI
-        author_name: pmf-github-action
-        author_email: 41898282+github-actions[bot]@users.noreply.github.com
-        message: 'Automatically rendered .drawio files for quantum learning stack'
-        add: "${{ steps.render.outputs.rendered-files }}"
-      if: "${{ steps.render.outputs.rendered-files != ''}}"
+      - uses: actions/checkout@v2
+      - name: Convert test file to png image
+        uses: Burnett01/actions-drawio@1.1
+        with:
+          src: quantum_roadmap.drawio
+          dest: test.png
+      - name: Upload image as artifact
+        uses: actions/upload-artifact@v1
+        with:
+          name: png
+          path: test.png
