@@ -48,8 +48,18 @@
     <li><a href="#getting-started">Getting Started</a></li>
     <li><a href="#resources">Resources</a>
     <ul>
-      <li><a href="#learning">Learning</a></li>
-      <li><a href="#development-tools">Development Tools</a></li>
+      <li><a href="#fundamental-topics">Fundamental Topics</a></li>
+      <ul>
+        <li><a href="#linear-algebra-&-complex-numbers">Linear Algebra & Complex Numbers</a></li>
+      </ul>
+      <li><a href="#ecosystem">Ecosystem</a></li>
+      <ul>
+        <li><a href="#quantum-manufacturers">Quantum Manufacturers</a></li>
+        <ul>
+          <li><a href="#ibm">IBM</a></li>
+          <li><a href="#google">Google</a></li>
+        </ul>
+      </ul>
       <li><a href="#blogs">Blogs</a></li>
       <li><a href="#books">Books</a></li>
       <li><a href="#popular-science">Popular Science</a></li>
