@@ -48,17 +48,6 @@ jobs:
           name: svg
           path: images/quantum_roadmap.svg
 
-      # pdf
-      - name: Building pdf
-        uses: Burnett01/actions-drawio@1.1
-        with:
-          src: quantum_roadmap.drawio
-          dest: images/quantum_roadmap.pdf
-      - name: Upload image as artifact
-        uses: actions/upload-artifact@v1
-        with:
-          name: pdf
-          path: images/quantum_roadmap.pdf
 
       - name: List & upload rendered files
         run: 'ls -l ${{ steps.render.outputs.rendered-files }}'
