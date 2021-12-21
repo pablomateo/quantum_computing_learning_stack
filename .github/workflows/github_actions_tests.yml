@@ -38,7 +38,7 @@ jobs:
 
     - name: Render pdf files
       uses: docker://ghcr.io/racklet/render-drawio-action:v1
-      id: render
+      id: render_pdf
       with:
         format: pdf
         sub-dirs: '.'
@@ -48,7 +48,7 @@ jobs:
 
     - name: Render svg files
       uses: docker://ghcr.io/racklet/render-drawio-action:v1
-      id: render
+      id: render_svg
       with:
         format: svg
         sub-dirs: '.'
