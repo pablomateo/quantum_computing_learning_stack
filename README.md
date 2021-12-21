@@ -46,9 +46,23 @@
   <summary>Table of Contents</summary>
   <ol>
     <li><a href="#getting-started">Getting Started</a></li>
+    <li><a href="#resources">Resources</a>
+    <ul>
+      <li><a href="#learning">Learning</a></li>
+      <li><a href="#development-tools">Development Tools</a></li>
+      <li><a href="#blogs">Blogs</a></li>
+      <li><a href="#books">Books</a></li>
+      <li><a href="#popular-science">Popular Science</a></li>
+      <li><a href="#Videos">videos</a></li>
+      <li><a href="#Community">Community</a></li>
+      <li><a href="#podcast">Podcast</a></li>
+    </ul>
+    </li>
     <li>
       <a href="#contributing">Contributing</a>
       <ul>
+        <li><a href="#adding-information">Adding information</a></li>
+        <li><a href="#improving-roadmap">Improving Roadmap</a></li>
         <li><a href="#generating-roadmap">Generating Roadmap</a></li>
       </ul>
     </li>
@@ -61,9 +75,67 @@
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+This repo is meant to be a reference site of **Quantum Computing Learning** resources. We have a curated list of references, tutorials, books, videos and courses.
 
+But we also want to reference all that information in a Quantum Learning Roadmap:
+
+![images/quantum_roadmap.png](images/quantum_roadmap.png).
+
+Read the <a href="#contributing">Contributing</a> section if you want to help build this community with us.
+Thank you!
+
+----
+
+# Resources
+
+## Learning
+
+- [IBM Q Full User Guide](https://quantumexperience.ng.bluemix.net/qx/tutorial?sectionId=full-user-guide&page=introduction) - Short tutorials providing a gentle introduction to quantum computing and IBM Q.
+
+
+## Development Tools
+
+- [Cirq](https://github.com/quantumlib/Cirq) - Python library for writing, manipulating, and optimizing NISQ circuits to run on quantum computers.
+- [IBM Quantum Experience](https://quantum-computing.ibm.com) - Online quantum composer to run experiments on real quantum computing hardware.
+- [PennyLane](http://github.com/XanaduAI/pennylane) - Open source framework for quantum computing and quantum machine learning that integrates various other platforms.
+- [Qiskit SDK](https://qiskit.org) - Software development kit by IBM for writing and running quantum algorithms on simulators and real hardware.
+
+## Blogs
+
+- [Decodoku](https://medium.com/@decodoku) - Interesting posts on quantum computation, by James Wootton.
+- [Microsoft Quantum blog](https://cloudblogs.microsoft.com/quantum/) - Microsoft Quantum program-wide updates.
+
+
+## Books
+
+- [An Introduction to Quantum Computing](https://www.amazon.com/Introduction-Quantum-Computing-Phillip-Kaye/dp/019857049X/) - Strikes an excellent balance between accessiblity and mathematical rigour. It is suitable for undergraduate students.
+- [Classical and Quantum Computation](https://books.google.com.au/books/about/Classical_and_Quantum_Computation.html?id=TrMposZZ0MQC&redir_esc=y) - Introduction to fundamentals of classical and quantum computing.
+- [Dancing with Qubits](https://www.robertsutor.com/dancing-with-qubits/) - How quantum computing works and how it can change the world.
+- [Learn Quantum Computation using Qiskit](http://community.qiskit.org/textbook) - An open-source textbook covering quantum algorithms and showing how to run them on real hardware using Qiskit. Also covers prerequisites.
+
+## Popular Science
+
+- [The Fabric of Reality: The Science of Parallel Universes and Its Implications](https://www.amazon.com/Fabric-Reality-Parallel-Universes-Implications/dp/014027541X) - It is of philosophical spirit, about revealing a unified fabric of reality explanation.
+
+## Videos
+
+- [Coding with Qiskit video series](https://www.youtube.com/playlist?list=PLOFEBzvs-Vvp2xg9-POLJhQwtVktlYGbY) - YouTube video series showing how to write quantum algorithms.
+- [Quantum Computing for Computer Scientists](https://www.youtube.com/watch?v=F_Riqjdh2oM) - Microsoft Research Talk on introductory quantum computing for computer scientists. Duration: 1 hour, 28 minutes.
+
+
+## Community
+
+- [D-Wave Leap Community](https://support.dwavesys.com/hc/en-us/community/topics) - D-Wave System's Leap Community Forum.
+- [IBM Q Community](https://community.qiskit.org/) - IBM Q Community page with list of upcoming events and latest programs.
+- [IBM Q Qiskit Community](https://qiskit.slack.com/) - Slack Channel for Qiskit and quantum computing discussions.
+
+
+## Podcasts
+
+- [Meet the meQuanics](https://soundcloud.com/mequanics) - Interviews with key quantum computing figures, aimed at the lay person.
+- [Quantum Computing Now](https://anchor.fm/quantumcomputingnow) - Podcast by Ethan Hansen covering three main topics: the basics of quantum computing, interviews and the latest news.
+
+----
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -93,24 +165,39 @@ If you want to improve the Quantum Learning Roadmap file, please follow these st
 
 1. Fork the project
 2. Go to [diagrams.net](https://www.diagrams.net/)
-2. Choose to "Save diagrams to" GitHub
+3. Choose to "Save diagrams to" GitHub
+
    - <img src="resources/steps_2.png" width="300"/>
-3. Choose "Open Existing Diagram"
+
+
+4. Choose "Open Existing Diagram"
+
    - <img src="resources/steps_3.png" width="300"/>
-4. Authorize the app through OAuth2 if asked
+
+
+5. Authorize the app through OAuth2 if asked
+
    - <img src="resources/steps_4.png" width="300"/>
-5. Choose the fork of this repository
-6. Choose what branch the file you want to edit is on (the branch already needs to exist)
-7. Choose the file you want to edit: `quantum_roadmap.draw.io`
+
+
+6. Choose the fork of this repository
+7. Choose what branch the file you want to edit is on (the branch already needs to exist)
+8. Choose the file you want to edit: `quantum_roadmap.draw.io`
    - <img src="resources/steps_5.png" width="300"/>
-8. You will now see the online editor; you can now edit your diagram as you like
+9. You will now see the online editor; you can now edit your diagram as you like
+
    - ![diagrams.net editor](resources/steps_6.png)
-9. When you make any changes; you will see a "Unsaved changes. Click here to save"-button.
+
+
+10. When you make any changes; you will see a "Unsaved changes. Click here to save"-button.
+
    - ![diagrams.net editor](resources/steps_7.png)
+
+
 11. Be careful to save it in draw.io xml format.
-10. When you are ready to save your changes into a commit, click that button and write your commit message.
-11. Create a Pull Request to our `main` branch.
-12. Once approved, the GitHub Action detects the change, and automatically renders the "raw" `.drawio` file into the format of your liking.
+12. When you are ready to save your changes into a commit, click that button and write your commit message.
+13. Create a Pull Request to our `main` branch.
+14. Once approved, the GitHub Action detects the change, and automatically renders the "raw" `.drawio` file into the format of your liking.
 
 <!-- Generating Roadmap -->
 #### Generating Roadmap
