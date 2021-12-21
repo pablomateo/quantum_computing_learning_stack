@@ -60,13 +60,13 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: png
-          path: quantum_roadmap.png
+          path: images/quantum_roadmap.png
 
       - name: Upload svg as artifact
         uses: actions/upload-artifact@v1
         with:
           name: svg
-          path: quantum_roadmap.svg
+          path: images/quantum_roadmap.svg
 
       - name: Collapsing Quantum states
         run: echo Finished workflow!
