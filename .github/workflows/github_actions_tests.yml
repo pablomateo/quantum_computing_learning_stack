@@ -29,13 +29,13 @@ jobs:
         uses: Burnett01/actions-drawio@1.1
         with:
           src: quantum_roadmap.drawio
-          dest: /images/quantum_roadmap.png
+          dest: images/quantum_roadmap.png
       #svg
       - name: Building svg
         uses: Burnett01/actions-drawio@1.1
         with:
           src: quantum_roadmap.drawio
-          dest: /images/quantum_roadmap.svg
+          dest: images/quantum_roadmap.svg
 
       - name: Get current date
         id: date
