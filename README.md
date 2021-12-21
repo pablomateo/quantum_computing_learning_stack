@@ -104,7 +104,7 @@ Thank you!
 - :blue_book:[The Mathematics of Quantum Mechanics][The Mathematics of Quantum Mechanics] - Martin Laforest PhD.
 - :blue_book:[Linear Algebra by Jim Hefferon 4th Edition](https://joshua.smcvt.edu/linearalgebra/book.pdf)
 
-### Introduction concepts
+### Introduction concepts  
 - :blue_book:[An Introduction to Quantum Computing][An Introduction to Quantum Computing] - Suitable for undergraduate students with basic concepts and mathematics.
 
 <!---
@@ -151,6 +151,8 @@ Thank you!
 #### Xanadu
 #### HoneyWell
 #### IonQ
+
+## Quantum Libraries
 --->
 
 ## Blogs & News
@@ -159,7 +161,7 @@ Thank you!
 
 ## Podcasts
 - :sound:[Meet the meQuanics][Meet the meQuanics] - Interviews with key quantum computing figures.
-- :sound[Quantum Computing Now][Quantum Computing Now] - Podcast by Ethan Hansen covering three main topics: the basics of quantum computing, interviews and the latest news.
+- :sound:[Quantum Computing Now][Quantum Computing Now] - Podcast by Ethan Hansen covering three main topics: the basics of quantum computing, interviews and the latest news.
 
 ----
 
