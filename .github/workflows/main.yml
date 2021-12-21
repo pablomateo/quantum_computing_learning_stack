@@ -23,6 +23,10 @@ jobs:
       - name: Initiating entanglement
         run: echo Building Quantum Stack!
 
+      - name: Get current date
+        id: date
+        run: echo "::set-output name=date::$(date +'%d-%m-%Y_T%H:%M:%S')"
+
       # png
       - name: Building png
         uses: Burnett01/actions-drawio@1.1
@@ -35,10 +39,6 @@ jobs:
         with:
           src: quantum_roadmap.drawio
           dest: images/quantum_roadmap.svg
-
-      - name: Get current date
-        id: date
-        run: echo "::set-output name=date::$(date +'%d-%m-%Y T%H:%M:%S')"
 
       - name: Changelog
         run: |
