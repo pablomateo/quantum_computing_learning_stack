@@ -45,39 +45,27 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href="#getting-started">Getting Started</a></li>
-    <li><a href="#resources">Resources</a>
+    <li><a href="#fundamental-topics">Fundamental Topics</a></li>
     <ul>
-      <li><a href="#fundamental-topics">Fundamental Topics</a></li>
-      <ul>
-        <li><a href="#linear-algebra-&-complex-numbers">Linear Algebra & Complex Numbers</a></li>
-      </ul>
-      <li><a href="#ecosystem">Ecosystem</a></li>
-      <ul>
-        <li><a href="#quantum-manufacturers">Quantum Manufacturers</a></li>
-        <ul>
-          <li><a href="#ibm">IBM</a></li>
-          <li><a href="#google">Google</a></li>
-        </ul>
-      </ul>
-      <li><a href="#blogs">Blogs</a></li>
-      <li><a href="#books">Books</a></li>
-      <li><a href="#popular-science">Popular Science</a></li>
-      <li><a href="#Videos">videos</a></li>
-      <li><a href="#Community">Community</a></li>
-      <li><a href="#podcast">Podcast</a></li>
+      <li><a href="#linear-algebra-&-complex-numbers">Linear Algebra & Complex Numbers</a></li>
+      <li><a href="#introduction-concepts">Introduction Concepts</a></li>
     </ul>
-    </li>
-    <li>
-      <a href="#contributing">Contributing</a>
+    <li><a href="#quantum-topics">Quantum Topics</a></li>
+    <ul>
+      <li><a href="#general-knowledge">General Knowledge</a></li>
+    </ul>
+    <li><a href="#ecosystem">Ecosystem</a></li>
+    <ul>
+      <li><a href="#quantum-companies">Quantum Companies</a></li>
       <ul>
-        <li><a href="#adding-information">Adding information</a></li>
-        <li><a href="#improving-roadmap">Improving Roadmap</a></li>
-        <li><a href="#generating-roadmap">Generating Roadmap</a></li>
+        <li><a href="#ibm">IBM</a></li>
+        <li><a href="#google">Google</a></li>
+        <li><a href="#microsoft">Microsoft</a></li>
+        <li><a href="#d-wave">D-Wave</a></li>
       </ul>
-    </li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    </ul>
+    <li><a href="#blogs-&-news">Blogs & News</a></li>
+    <li><a href="#podcast">Podcast</a></li>
   </ol>
 </details>
 
@@ -101,8 +89,11 @@ Thank you!
 *** Please reference the kind of resource with the following formats:
 *** Book -> :blue_book:
 *** Video -> :tv:
+*** Audio -> :sound:
 *** Course -> :school_satchel:
 *** Link -> :link:
+*** News -> :newspaper:
+*** Forums ->:mega:
 *** Thanks!
 -->
 
@@ -113,13 +104,22 @@ Thank you!
 - :blue_book:[The Mathematics of Quantum Mechanics][The Mathematics of Quantum Mechanics] - Martin Laforest PhD.
 - :blue_book:[Linear Algebra by Jim Hefferon 4th Edition](https://joshua.smcvt.edu/linearalgebra/book.pdf)
 
+### Introduction concepts
+- :blue_book:[An Introduction to Quantum Computing][An Introduction to Quantum Computing] - Suitable for undergraduate students with basic concepts and mathematics.
+
 <!---
 ## Quantum concepts
 ### Trapped ions
 ### Superconducting Qubits
 ### Photonics
 
+-->
+
 ## Quantum Topics
+### General Knowledge
+- :blue_book:[Dancing with Qubits][Dancing with Qubits] - How quantum computing works and how it can change the world.
+- :blue_book:[Classical and Quantum Computation][Classical and Quantum Computation] - Intro to fundamentals of classical and quantum computing.
+<!---
 ### Complexity Theory
 ### Classical Logic
 ### Block Sphere
@@ -128,60 +128,38 @@ Thank you!
 --->
 
 ## Ecosystem
-### Quantum Manufacturers
+### Quantum Companies
 #### IBM
-- :school_satchel:[Qiskit Textbook][Qiskit Textbook]
+- :school_satchel:[Qiskit Textbook][Qiskit Textbook] - Open-source textbook covering quantum algorithms using Qiskit.
 - :school_satchel:[IBM Q Full User Guide][IBM Q Full User Guide] - Short tutorials providing a gentle introduction to quantum computing and IBM Q.
 - :link:[IBM Quantum Experience][IBM Quantum Experience] - IBM Quantum Experience
 - :link:[Qiskit SDK][Qiskit SDK] - Software development kit by IBM for writing and running quantum algorithms on simulators and real hardware.
+- :tv:[Coding with Qiskit video series][Coding with Qiskit video series] - YouTube video series showing how to write quantum algorithms.
+- :mega:[IBM Q Community][IBM Q Community] - IBM Q Community page with list of upcoming events and latest programs.
+- :mega:[IBM Q Qiskit Slack Community][IBM Q Qiskit Slack Community] - Slack Channel for Qiskit and quantum computing discussions.
 
 #### Google
 - :school_satchel:[Google CirQ][Google CirQ]
 - :link:[Cirq Library][Cirq Library] - Python library for writing, manipulating, and optimizing NISQ circuits to run on quantum computers.
 
+#### Microsoft
+- :tv:[Quantum Computing for Computer Scientists][Quantum Computing for Computer Scientists] - Microsoft Research Talk on introductory quantum computing for computer scientists.
+
+#### D-Wave
+- [D-Wave Leap Community][D-Wave Leap Community] - D-Wave System's Leap Community Forum.
 <!---
 #### Xanadu
 #### HoneyWell
 #### IonQ
 --->
 
-----
-Pending to arrange
-
-## Blogs
-
-- [Decodoku](https://medium.com/@decodoku) - Interesting posts on quantum computation, by James Wootton.
-- [Microsoft Quantum blog](https://cloudblogs.microsoft.com/quantum/) - Microsoft Quantum program-wide updates.
-
-
-## Books
-
-- [An Introduction to Quantum Computing](https://www.amazon.com/Introduction-Quantum-Computing-Phillip-Kaye/dp/019857049X/) - Strikes an excellent balance between accessiblity and mathematical rigour. It is suitable for undergraduate students.
-- [Classical and Quantum Computation](https://books.google.com.au/books/about/Classical_and_Quantum_Computation.html?id=TrMposZZ0MQC&redir_esc=y) - Introduction to fundamentals of classical and quantum computing.
-- [Dancing with Qubits](https://www.robertsutor.com/dancing-with-qubits/) - How quantum computing works and how it can change the world.
-- [Learn Quantum Computation using Qiskit](http://community.qiskit.org/textbook) - An open-source textbook covering quantum algorithms and showing how to run them on real hardware using Qiskit. Also covers prerequisites.
-
-## Popular Science
-
-- [The Fabric of Reality: The Science of Parallel Universes and Its Implications](https://www.amazon.com/Fabric-Reality-Parallel-Universes-Implications/dp/014027541X) - It is of philosophical spirit, about revealing a unified fabric of reality explanation.
-
-## Videos
-
-- [Coding with Qiskit video series](https://www.youtube.com/playlist?list=PLOFEBzvs-Vvp2xg9-POLJhQwtVktlYGbY) - YouTube video series showing how to write quantum algorithms.
-- [Quantum Computing for Computer Scientists](https://www.youtube.com/watch?v=F_Riqjdh2oM) - Microsoft Research Talk on introductory quantum computing for computer scientists. Duration: 1 hour, 28 minutes.
-
-
-## Community
-
-- [D-Wave Leap Community](https://support.dwavesys.com/hc/en-us/community/topics) - D-Wave System's Leap Community Forum.
-- [IBM Q Community](https://community.qiskit.org/) - IBM Q Community page with list of upcoming events and latest programs.
-- [IBM Q Qiskit Community](https://qiskit.slack.com/) - Slack Channel for Qiskit and quantum computing discussions.
-
+## Blogs & News
+- :newspaper:[Decodoku](https://medium.com/@decodoku) - Interesting posts on quantum computation, by James Wootton.
+- :newspaper:[Microsoft Quantum blog](https://cloudblogs.microsoft.com/quantum/) - Microsoft Quantum program-wide updates.
 
 ## Podcasts
-
-- [Meet the meQuanics](https://soundcloud.com/mequanics) - Interviews with key quantum computing figures, aimed at the lay person.
-- [Quantum Computing Now](https://anchor.fm/quantumcomputingnow) - Podcast by Ethan Hansen covering three main topics: the basics of quantum computing, interviews and the latest news.
+- :sound:[Meet the meQuanics][Meet the meQuanics] - Interviews with key quantum computing figures.
+- :sound[Quantum Computing Now][Quantum Computing Now] - Podcast by Ethan Hansen covering three main topics: the basics of quantum computing, interviews and the latest news.
 
 ----
 
@@ -276,3 +254,13 @@ See [LICENSE](LICENSE) for more information.
 [Cirq Library]:https://github.com/quantumlib/Cirq
 [IBM Quantum Experience]:https://quantum-computing.ibm.com
 [Qiskit SDK]:https://qiskit.org
+[An Introduction to Quantum Computing]:https://www.amazon.com/Introduction-Quantum-Computing-Phillip-Kaye/dp/019857049X/
+[Dancing with Qubits]:https://www.robertsutor.com/dancing-with-qubits/
+[Classical and Quantum Computation]:https://books.google.com.au/books/about/Classical_and_Quantum_Computation.html?id=TrMposZZ0MQC&redir_esc=y
+[Coding with Qiskit video series]:https://www.youtube.com/playlist?list=PLOFEBzvs-Vvp2xg9-POLJhQwtVktlYGbY
+[Quantum Computing for Computer Scientists]:https://www.youtube.com/watch?v=F_Riqjdh2oM
+[D-Wave Leap Community]:https://support.dwavesys.com/hc/en-us/community/topics
+[IBM Q Community]:https://community.qiskit.org/
+[IBM Q Qiskit Slack Community]:https://qiskit.slack.com/
+[Meet the meQuanics]:https://soundcloud.com/mequanics
+[Quantum Computing Now]:https://anchor.fm/quantumcomputingnow
