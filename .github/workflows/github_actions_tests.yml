@@ -31,3 +31,13 @@ jobs:
         with:
           name: png
           path: test.png
+      - name: List the rendered files
+        run: 'ls -l ${{ steps.render.outputs.rendered-files }}'
+      - uses: EndBug/add-and-commit@v7
+        with:
+          # This "special" author name and email will show up as the GH Actions user/bot in the UI
+          author_name: github-actions
+          author_email: 41898282+github-actions[bot]@users.noreply.github.com
+          message: 'Automatically render .drawio files'
+          add: "${{ steps.render.outputs.rendered-files }}"
+        if: "${{ steps.render.outputs.rendered-files != ''}}"
