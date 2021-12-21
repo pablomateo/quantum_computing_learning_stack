@@ -49,7 +49,7 @@ jobs:
           message: "[Bot] Updated png!"
           author_name: PMF Github Bot
           author_email: 41898282+github-actions[bot]@users.noreply.github.com
-          add: "ls -l ${{ steps.render.outputs.rendered-files }}"
+          add: "${{ steps.render.outputs.rendered-files }}"
 
       # Upload Artifacts
       - name: Upload png as artifact
