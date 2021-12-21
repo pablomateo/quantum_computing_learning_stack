@@ -40,14 +40,14 @@ jobs:
       uses: docker://ghcr.io/racklet/render-drawio-action:v1
       id: render_pdf
       with:
-        files: /images/quantum_learning_stack.pdf:quantum_roadmap.drawio
+        files: images/quantum_learning_stack.pdf:quantum_roadmap.drawio
         log-level: 'debug'
 
     - name: Render png files
       uses: docker://ghcr.io/racklet/render-drawio-action:v1
       id: render_png
       with:
-        files: /images/quantum_learning_stack.png:quantum_roadmap.drawio
+        files: images/quantum_learning_stack.png:quantum_roadmap.drawio
 
     - name: List the rendered files
       run: 'ls -l ${{ steps.render.outputs.rendered-files }}'
