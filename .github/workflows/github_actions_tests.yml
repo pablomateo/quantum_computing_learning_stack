@@ -26,11 +26,11 @@ jobs:
     - name: Run script
       run: echo Building Quantum Stack!
 
-    - name: Render png files
+    - name: Render scg files
       uses: docker://ghcr.io/racklet/render-drawio-action:v1
       id: render
       with:
-        format: png
+        format: svg
         sub-dirs: '.'
         skip-dirs: '.git'
         # files:  "/images/quantum_learning_stack.png:quantum_roadmap.drawio,images/quantum_learning_stack.svg:quantum_roadmap.drawio"
@@ -40,21 +40,14 @@ jobs:
       uses: docker://ghcr.io/racklet/render-drawio-action:v1
       id: render_pdf
       with:
-        format: pdf
-        sub-dirs: '.'
-        skip-dirs: '.git'
-        # files:  "/images/quantum_learning_stack.png:quantum_roadmap.drawio,images/quantum_learning_stack.svg:quantum_roadmap.drawio"
+        files: /images/quantum_learning_stack.pdf:quantum_roadmap.drawio
         log-level: 'debug'
 
-    - name: Render svg files
+    - name: Render png files
       uses: docker://ghcr.io/racklet/render-drawio-action:v1
-      id: render_svg
+      id: render_png
       with:
-        format: svg
-        sub-dirs: '.'
-        skip-dirs: '.git'
-        # files:  "/images/quantum_learning_stack.png:quantum_roadmap.drawio,images/quantum_learning_stack.svg:quantum_roadmap.drawio"
-        log-level: 'debug'
+        files: /images/quantum_learning_stack.png:quantum_roadmap.drawio
 
     - name: List the rendered files
       run: 'ls -l ${{ steps.render.outputs.rendered-files }}'
