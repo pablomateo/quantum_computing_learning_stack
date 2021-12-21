@@ -37,9 +37,13 @@ jobs:
           src: quantum_roadmap.drawio
           dest: quantum_roadmap.svg
 
+      - name: Get current date
+        id: date
+        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+
       - name: Changelog
         run: |
-          echo '::set-output name=date::$(date +'%Y-%m-%d') -> Generating new images' >> changelog.txt
+          echo 'Generating new images at ${{ steps.date.outputs.date }}' >> changelog.txt
 
     # Upload files to repo
       - name: List & upload rendered files
