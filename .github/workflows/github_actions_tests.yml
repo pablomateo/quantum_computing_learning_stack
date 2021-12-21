@@ -21,7 +21,7 @@ jobs:
     name: Render draw.io files
     steps:
       - uses: actions/checkout@v2
-      - name: Building Quantum Stack files
+      - name: Initiating entanglment
         run: echo Building Quantum Stack!
 
       # png
@@ -30,30 +30,35 @@ jobs:
         with:
           src: quantum_roadmap.drawio
           dest: quantum_roadmap.png
-      - name: Upload image as artifact
-        uses: actions/upload-artifact@v1
-        with:
-          name: png
-          path: quantum_roadmap.png
-
       #svg
       - name: Building svg
         uses: Burnett01/actions-drawio@1.1
         with:
           src: quantum_roadmap.drawio
           dest: quantum_roadmap.svg
-      - name: Upload image as artifact
+
+    # Upload files to repo
+     - name: List & upload rendered files
+       run: 'ls -l ${{ steps.render.outputs.rendered-files }}'
+     - uses: stefanzweifel/git-auto-commit-action@v4
+       with:
+         commit_message: "[Bot] Updated png!"
+         commit_user_name: PMF Github Bot
+         commit_user_email: 41898282+github-actions[bot]@users.noreply.github.com
+         commit_author: PMF Github Bot
+
+      # Upload Artifacts
+      - name: Upload png as artifact
+        uses: actions/upload-artifact@v1
+        with:
+          name: png
+          path: quantum_roadmap.png
+
+      - name: Upload svg as artifact
         uses: actions/upload-artifact@v1
         with:
           name: svg
           path: quantum_roadmap.svg
 
-
-      - name: List & upload rendered files
-        run: 'ls -l ${{ steps.render.outputs.rendered-files }}'
-      - uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: "[Bot] Updated images!"
-          commit_user_name: PMF Github Bot
-          commit_user_email: 41898282+github-actions[bot]@users.noreply.github.com
-          commit_author: PMF Github Bot
+      - name: Collapsing Quantum states
+        run: echo Finished workflow!
