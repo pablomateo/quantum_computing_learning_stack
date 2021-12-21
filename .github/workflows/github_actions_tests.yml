@@ -21,7 +21,7 @@ jobs:
     name: Render draw.io files
     steps:
       - uses: actions/checkout@v2
-      - name: Initiating entanglment
+      - name: Initiating entanglement
         run: echo Building Quantum Stack!
 
       # png
@@ -36,6 +36,10 @@ jobs:
         with:
           src: quantum_roadmap.drawio
           dest: quantum_roadmap.svg
+
+      - name: Changelog
+        run: |
+          echo '::set-output name=date::$(date +'%Y-%m-%d') -> Generating new images' >> changelog.txt
 
     # Upload files to repo
       - name: List & upload rendered files
