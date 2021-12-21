@@ -33,13 +33,9 @@ jobs:
           path: test.png
       - name: List the rendered files
         run: 'ls -l ${{ steps.render.outputs.rendered-files }}'
-
-
-      - uses: EndBug/add-and-commit@v7
+      - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          # This "special" author name and email will show up as the GH Actions user/bot in the UI
-          author_name: github-actions
-          author_email: 41898282+github-actions[bot]@users.noreply.github.com
-          message: 'Automatically render .drawio files'
-          add: "ls -l ${{ steps.render.outputs.rendered-files }}"
-        if: "${{ steps.render.outputs.rendered-files != 'null'}}"
+          commit_message: "[Bot] Updated images!"
+          commit_user_name: PMF Github Bot
+          commit_user_email: 41898282+github-actions[bot]@users.noreply.github.com
+          commit_author: Pablo Mateo
