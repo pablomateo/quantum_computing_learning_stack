@@ -16,31 +16,54 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  drawio-export:
+  render_tests:
     runs-on: ubuntu-latest
+    name: Render draw.io files
     steps:
-      - name: Checkout sources
-        uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-          token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Checkout
+      uses: actions/checkout@v2
 
-      - name: Export drawio files to asciidoctor and png files
-        uses: rlespinasse/drawio-export-action@v2.x
-        with:
-          format: "pdf"
-          transparent: true
-          output: images
+    - name: Run script
+      run: echo Building Quantum Stack!
 
-      - name: Get author and committer info from HEAD commit
-        uses: rlespinasse/git-commit-data-action@v1.x
-        if: github.ref == 'refs/heads/github_actions_test'
+    - name: Render png files
+      uses: docker://ghcr.io/racklet/render-drawio-action:v1
+      id: render
+      with:
+        format: png
+        sub-dirs: '.'
+        skip-dirs: '.git'
+        # files:  "/images/quantum_learning_stack.png:quantum_roadmap.drawio,images/quantum_learning_stack.svg:quantum_roadmap.drawio"
+        log-level: 'debug'
 
-      - name: Commit changed files
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: "docs: sync draw.io exported files"
-          commit_user_name: "pmf-github-action"
-          commit_user_email: 41898282+github-actions[bot]@users.noreply.github.com
-          commit_author: "${{ env.GIT_COMMIT_AUTHOR }}"
-        if: github.ref == 'refs/heads/github_actions_test'
+    - name: Render pdf files
+      uses: docker://ghcr.io/racklet/render-drawio-action:v1
+      id: render
+      with:
+        format: pdf
+        sub-dirs: '.'
+        skip-dirs: '.git'
+        # files:  "/images/quantum_learning_stack.png:quantum_roadmap.drawio,images/quantum_learning_stack.svg:quantum_roadmap.drawio"
+        log-level: 'debug'
+
+    - name: Render svg files
+      uses: docker://ghcr.io/racklet/render-drawio-action:v1
+      id: render
+      with:
+        format: svg
+        sub-dirs: '.'
+        skip-dirs: '.git'
+        # files:  "/images/quantum_learning_stack.png:quantum_roadmap.drawio,images/quantum_learning_stack.svg:quantum_roadmap.drawio"
+        log-level: 'debug'
+
+    - name: List the rendered files
+      run: 'ls -l ${{ steps.render.outputs.rendered-files }}'
+
+    - uses: EndBug/add-and-commit@v7
+      with:
+        # This "special" author name and email will show up as the GH Actions user/bot in the UI
+        author_name: pmf-github-action
+        author_email: 41898282+github-actions[bot]@users.noreply.github.com
+        message: 'Automatically rendered .drawio files for quantum learning stack'
+        add: "${{ steps.render.outputs.rendered-files }}"
+      if: "${{ steps.render.outputs.rendered-files != ''}}"
