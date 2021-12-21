@@ -86,19 +86,57 @@ Thank you!
 
 ----
 
+<!--
+*** https://gist.github.com/rxaviers/7360908#file-gistfile1-md
+*** Please reference the kind of resource with the following formats:
+*** Book -> :blue_book:
+*** Video -> :tv:
+*** Course -> :school_satchel:
+*** Link -> :link:
+*** Thanks!
+-->
+
 # Resources
 
-## Learning
+## Fundamental Topics
+### Linear Algebra & Complex Numbers
+- :blue_book:[The Mathematics of Quantum Mechanics][The Mathematics of Quantum Mechanics] - Martin Laforest PhD.
+- :blue_book:[Linear Algebra by Jim Hefferon 4th Edition](https://joshua.smcvt.edu/linearalgebra/book.pdf)
 
-- [IBM Q Full User Guide](https://quantumexperience.ng.bluemix.net/qx/tutorial?sectionId=full-user-guide&page=introduction) - Short tutorials providing a gentle introduction to quantum computing and IBM Q.
+<!---
+## Quantum concepts
+### Trapped ions
+### Superconducting Qubits
+### Photonics
 
+## Quantum Topics
+### Complexity Theory
+### Classical Logic
+### Block Sphere
+### Quantum Operators
+### Quantum Algorithms
+--->
 
-## Development Tools
+## Ecosystem
+### Quantum Manufacturers
+#### IBM
+- :school_satchel:[Qiskit Textbook][Qiskit Textbook]
+- :school_satchel:[IBM Q Full User Guide][IBM Q Full User Guide] - Short tutorials providing a gentle introduction to quantum computing and IBM Q.
+- :link:[IBM Quantum Experience][IBM Quantum Experience] - IBM Quantum Experience
+- :link:[Qiskit SDK][Qiskit SDK] - Software development kit by IBM for writing and running quantum algorithms on simulators and real hardware.
 
-- [Cirq](https://github.com/quantumlib/Cirq) - Python library for writing, manipulating, and optimizing NISQ circuits to run on quantum computers.
-- [IBM Quantum Experience](https://quantum-computing.ibm.com) - Online quantum composer to run experiments on real quantum computing hardware.
-- [PennyLane](http://github.com/XanaduAI/pennylane) - Open source framework for quantum computing and quantum machine learning that integrates various other platforms.
-- [Qiskit SDK](https://qiskit.org) - Software development kit by IBM for writing and running quantum algorithms on simulators and real hardware.
+#### Google
+- :school_satchel:[Google CirQ][Google CirQ]
+- :link:[Cirq Library][Cirq Library] - Python library for writing, manipulating, and optimizing NISQ circuits to run on quantum computers.
+
+<!---
+#### Xanadu
+#### HoneyWell
+#### IonQ
+--->
+
+----
+Pending to arrange
 
 ## Blogs
 
@@ -219,3 +257,12 @@ See [LICENSE](LICENSE) for more information.
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
+
+<!-- Links -->
+[The Mathematics of Quantum Mechanics]:https://uwaterloo.ca/institute-for-quantum-computing/sites/ca.institute-for-quantum-computing/files/uploads/files/mathematics_qm_v21.pdf
+[Qiskit Textbook]:https://qiskit.org/textbook/preface.html
+[Google CirQ]:https://quantumai.google/cirq
+[IBM Q Full User Guide]:https://quantumexperience.ng.bluemix.net/qx/tutorial?sectionId=full-user-guide&page=introduction
+[Cirq Library]:https://github.com/quantumlib/Cirq
+[IBM Quantum Experience]:https://quantum-computing.ibm.com
+[Qiskit SDK]:https://qiskit.org
