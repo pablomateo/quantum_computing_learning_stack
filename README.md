@@ -87,13 +87,13 @@ Thank you!
 <!--
 *** https://gist.github.com/rxaviers/7360908#file-gistfile1-md
 *** Please reference the kind of resource with the following formats:
-*** Book -> :blue_book:
-*** Video -> :tv:
-*** Audio -> :sound:
-*** Course -> :school_satchel:
-*** Link -> :link:
-*** News -> :newspaper:
-*** Forums ->:mega:
+*** Book 📘 -> :blue_book:
+*** Video 📺 -> :tv:
+*** Audio 🔈 -> :sound:
+*** Course 🎒 -> :school_satchel:
+*** Link 🔗 -> :link:
+*** News 📰 -> :newspaper:
+*** Forums 📣 ->:mega:
 *** Thanks!
 -->
 
@@ -101,11 +101,11 @@ Thank you!
 
 ## Fundamental Topics
 ### Linear Algebra & Complex Numbers
-- :blue_book:[The Mathematics of Quantum Mechanics][The Mathematics of Quantum Mechanics] - Martin Laforest PhD.
-- :blue_book:[Linear Algebra by Jim Hefferon 4th Edition](https://joshua.smcvt.edu/linearalgebra/book.pdf)
+- :blue_book: [The Mathematics of Quantum Mechanics][The Mathematics of Quantum Mechanics] - Martin Laforest PhD.
+- :blue_book: [Linear Algebra 4th Edition](https://joshua.smcvt.edu/linearalgebra/book.pdf) - Jim Hefferon
 
 ### Introduction concepts  
-- :blue_book:[An Introduction to Quantum Computing][An Introduction to Quantum Computing] - Suitable for undergraduate students with basic concepts and mathematics.
+- :blue_book: [An Introduction to Quantum Computing][An Introduction to Quantum Computing] - Suitable for undergraduate students with basic concepts and mathematics.
 
 <!---
 ## Quantum concepts
@@ -117,8 +117,8 @@ Thank you!
 
 ## Quantum Topics
 ### General Knowledge
-- :blue_book:[Dancing with Qubits][Dancing with Qubits] - How quantum computing works and how it can change the world.
-- :blue_book:[Classical and Quantum Computation][Classical and Quantum Computation] - Intro to fundamentals of classical and quantum computing.
+- :blue_book: [Dancing with Qubits][Dancing with Qubits] - How quantum computing works and how it can change the world.
+- :blue_book: [Classical and Quantum Computation][Classical and Quantum Computation] - Intro to fundamentals of classical and quantum computing.
 <!---
 ### Complexity Theory
 ### Classical Logic
@@ -130,23 +130,23 @@ Thank you!
 ## Ecosystem
 ### Quantum Companies
 #### IBM
-- :school_satchel:[Qiskit Textbook][Qiskit Textbook] - Open-source textbook covering quantum algorithms using Qiskit.
-- :school_satchel:[IBM Q Full User Guide][IBM Q Full User Guide] - Short tutorials providing a gentle introduction to quantum computing and IBM Q.
-- :link:[IBM Quantum Experience][IBM Quantum Experience] - IBM Quantum Experience
-- :link:[Qiskit SDK][Qiskit SDK] - Software development kit by IBM for writing and running quantum algorithms on simulators and real hardware.
-- :tv:[Coding with Qiskit video series][Coding with Qiskit video series] - YouTube video series showing how to write quantum algorithms.
-- :mega:[IBM Q Community][IBM Q Community] - IBM Q Community page with list of upcoming events and latest programs.
-- :mega:[IBM Q Qiskit Slack Community][IBM Q Qiskit Slack Community] - Slack Channel for Qiskit and quantum computing discussions.
+- :school_satchel: [Qiskit Textbook][Qiskit Textbook] - Open-source textbook covering quantum algorithms using Qiskit.
+- :school_satchel: [IBM Q Full User Guide][IBM Q Full User Guide] - Short tutorials providing a gentle introduction to quantum computing and IBM Q.
+- :link: [IBM Quantum Experience][IBM Quantum Experience] - IBM Quantum Experience
+- :link: [Qiskit SDK][Qiskit SDK] - Software development kit by IBM for writing and running quantum algorithms on simulators and real hardware.
+- :tv: [Coding with Qiskit video series][Coding with Qiskit video series] - YouTube video series showing how to write quantum algorithms.
+- :mega: [IBM Q Community][IBM Q Community] - IBM Q Community page with list of upcoming events and latest programs.
+- :mega: [IBM Q Qiskit Slack Community][IBM Q Qiskit Slack Community] - Slack Channel for Qiskit and quantum computing discussions.
 
 #### Google
-- :school_satchel:[Google CirQ][Google CirQ]
-- :link:[Cirq Library][Cirq Library] - Python library for writing, manipulating, and optimizing NISQ circuits to run on quantum computers.
+- :school_satchel: [Google CirQ][Google CirQ]
+- :link: [Cirq Library][Cirq Library] - Python library for writing, manipulating, and optimizing NISQ circuits to run on quantum computers.
 
 #### Microsoft
-- :tv:[Quantum Computing for Computer Scientists][Quantum Computing for Computer Scientists] - Microsoft Research Talk on introductory quantum computing for computer scientists.
+- :tv: [Quantum Computing for Computer Scientists][Quantum Computing for Computer Scientists] - Microsoft Research Talk on introductory quantum computing for computer scientists.
 
 #### D-Wave
-- [D-Wave Leap Community][D-Wave Leap Community] - D-Wave System's Leap Community Forum.
+- :mega: [D-Wave Leap Community][D-Wave Leap Community] - D-Wave System's Leap Community Forum.
 <!---
 #### Xanadu
 #### HoneyWell
@@ -156,12 +156,12 @@ Thank you!
 --->
 
 ## Blogs & News
-- :newspaper:[Decodoku](https://medium.com/@decodoku) - Interesting posts on quantum computation, by James Wootton.
-- :newspaper:[Microsoft Quantum blog](https://cloudblogs.microsoft.com/quantum/) - Microsoft Quantum program-wide updates.
+- :newspaper: [Decodoku](https://medium.com/@decodoku) - Interesting posts on quantum computation, by James Wootton.
+- :newspaper: [Microsoft Quantum blog](https://cloudblogs.microsoft.com/quantum/) - Microsoft Quantum program-wide updates.
 
 ## Podcasts
-- :sound:[Meet the meQuanics][Meet the meQuanics] - Interviews with key quantum computing figures.
-- :sound:[Quantum Computing Now][Quantum Computing Now] - Podcast by Ethan Hansen covering three main topics: the basics of quantum computing, interviews and the latest news.
+- :sound: [Meet the meQuanics][Meet the meQuanics] - Interviews with key quantum computing figures.
+- :sound: [Quantum Computing Now][Quantum Computing Now] - Podcast by Ethan Hansen covering three main topics: the basics of quantum computing, interviews and the latest news.
 
 ----
 
