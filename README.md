@@ -127,6 +127,10 @@ Thank you!
 ### Quantum Algorithms
 --->
 
+## Advanced Topics
+### Quantum Machine Learning
+- :school_satchel: [IBM Qiskit Quantum Machine Learning Course] - IBM Qiskit Quantum Machine Learning Course
+
 ## Ecosystem
 ### Quantum Companies
 #### IBM
@@ -266,3 +270,4 @@ See [LICENSE](LICENSE) for more information.
 [IBM Q Qiskit Slack Community]:https://qiskit.slack.com/
 [Meet the meQuanics]:https://soundcloud.com/mequanics
 [Quantum Computing Now]:https://anchor.fm/quantumcomputingnow
+[IBM Qiskit Quantum Machine Learning Course]:https://qiskit.org/textbook-beta/course/machine-learning-course/?utm_source=Social&utm_medium=Medium&utm_campaign=Announcement&utm_term=CTA&utm_content=qml-course
