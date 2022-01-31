@@ -128,7 +128,7 @@ Thank you!
 --->
 
 ## Advanced Topics
-### Quantum Machine Learning
+### Quantum Machine Learning
 - :school_satchel: [IBM Qiskit Quantum Machine Learning Course] - IBM Qiskit Quantum Machine Learning Course
 
 ## Ecosystem
